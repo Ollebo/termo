@@ -1,0 +1,71 @@
+{
+    "version": 1,
+    "minor_version": 1,
+    "key": "lovelace",
+    "data": {
+        "config": {
+            "title": "Beer Maker",
+            "views": [
+                {
+                    "path": "default_view",
+                    "title": "Home",
+                    "cards": [
+                        {
+                            "type": "entities",
+                            "entities": [
+                                "input_number.temp"
+                            ],
+                            "title": "Set Temp"
+                        },
+                        {
+                            "type": "entities",
+                            "entities": [
+                                {
+                                    "entity": "input_boolean.cooler"
+                                },
+                                {
+                                    "entity": "input_boolean.heater"
+                                },
+                                {
+                                    "entity": "input_boolean.temp_control"
+                                }
+                            ],
+                            "title": "Controll"
+                        },
+                        {
+                            "type": "sensor",
+                            "entity": "sensor.temp",
+                            "graph": "line",
+                            "name": "Current Temp",
+                            "icon": "mdi:fridge",
+                            "detail": 1
+                        },
+                        {
+                            "type": "sensor",
+                            "entity": "sensor.mois",
+                            "graph": "line",
+                            "icon": "mdi:water-percent"
+                        },
+                        {
+                            "type": "sensor",
+                            "entity": "sensor.light",
+                            "graph": "line",
+                            "icon": "mdi:ceiling-light"
+                        },
+                        {
+                            "type": "entities",
+                            "entities": [
+                                {
+                                    "entity": "switch.heat"
+                                },
+                                {
+                                    "entity": "switch.cold"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

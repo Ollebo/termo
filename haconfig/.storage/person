@@ -1,0 +1,15 @@
+{
+    "version": 2,
+    "minor_version": 1,
+    "key": "person",
+    "data": {
+        "items": [
+            {
+                "name": "Beer Making",
+                "user_id": "364bd4dcdae14770aab6d58f960dd688",
+                "device_trackers": [],
+                "id": "beer_making"
+            }
+        ]
+    }
+}

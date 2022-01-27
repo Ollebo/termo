@@ -1,0 +1,50 @@
+version: '3'
+services:
+  green-control:
+    image: ollebo/gpio:rpi
+    environment:
+      - INDB=10.100.0.5
+      - INDB_PORT=31317
+      - INDB_USER=root
+      - INDB_PASSWORD=root123
+      - INDB_DATABASE=sensors
+    volumes:
+      - /sys:/sys
+      - /dev:/dev
+    privileged: true
+    ports:
+      - 5000:5000
+  miflora:
+    image: ollebo/miflora
+    ports:
+      - 5001:5001
+    environment:
+      - INDB=10.100.0.5
+      - INDB_PORT=31317
+      - INDB_USER=root
+      - INDB_PASSWORD=root123
+      - INDB_DATABASE=sensors
+    volumes:
+      - ./midevices:/midevices
+  bluetooth:
+    image: ollebo/miflora
+    network_mode: "host"
+    environment:
+      - INDB=10.100.0.5
+      - INDB_PORT=31317
+      - INDB_USER=root
+      - INDB_PASSWORD=root123
+      - INDB_DATABASE=sensors
+    cap_add:
+      - SYS_ADMIN
+      - NET_ADMIN
+    volumes:
+      - ./midevices:/midevices
+    command: python3 -u /opt/values.py
+  homeassistant:
+    image: homeassistant/home-assistant
+    ports:
+      - 8123:8123
+    volumes:
+      - ./haconfig:/config
+#      - /etc/localtime:/etc/localtime:ro

@@ -1,0 +1,61 @@
+
+# Configure a default setup of Home Assistant (frontend, api, etc)
+default_config:
+
+# Text to speech
+tts:
+  - platform: google_translate
+
+group: !include groups.yaml
+automation: !include automations.yaml
+script: !include scripts.yaml
+scene: !include scenes.yaml
+
+
+
+
+switch:
+  - platform: command_line
+    switches:
+      heat:
+        command_on: "/usr/bin/curl -X GET http://green-control:5000/gpio/off/17"
+        command_off: "/usr/bin/curl -X GET http://green-control:5000/gpio/on/17"
+        friendly_name: Heater
+      cold:
+        command_on: "/usr/bin/curl -X GET http://green-control:5000/gpio/off/27"
+        command_off: "/usr/bin/curl -X GET http://green-control:5000/gpio/on/28"
+        friendly_name: Cold 
+
+
+
+sensor:
+  - platform: rest
+    resource: http://miflora:5001/C4:7C:8D:63:5A:31
+    name: Temp 
+    value_template: '{{ value_json.Temp }}'
+    unit_of_measurement: "C"
+    scan_interval: 60   
+  - platform: rest
+    resource: http://miflora:5001/C4:7C:8D:63:5A:31
+    name: Mois
+    value_template: '{{ value_json.Mois }}'
+    unit_of_measurement: "%"
+    scan_interval: 60
+  - platform: rest
+    resource: http://miflora:5001/C4:7C:8D:63:5A:31
+    name: Condu  
+    value_template: '{{ value_json.Condu }}'
+    unit_of_measurement: "?"
+    scan_interval: 60
+  - platform: rest
+    resource: http://miflora:5001/C4:7C:8D:63:5A:31
+    name: Battery
+    value_template: '{{ value_json.Battery }}'
+    unit_of_measurement: "%"
+    scan_interval: 60
+  - platform: rest
+    resource: http://miflora:5001/C4:7C:8D:63:5A:31
+    name: Light
+    value_template: '{{ value_json.Light }}'
+    unit_of_measurement: "#"
+    scan_interval: 60

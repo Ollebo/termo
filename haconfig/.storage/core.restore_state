@@ -1,0 +1,234 @@
+{
+    "version": 1,
+    "minor_version": 1,
+    "key": "core.restore_state",
+    "data": [
+        {
+            "state": {
+                "entity_id": "person.beer_making",
+                "state": "unknown",
+                "attributes": {
+                    "editable": false,
+                    "id": "beer_making",
+                    "user_id": "364bd4dcdae14770aab6d58f960dd688",
+                    "friendly_name": "Beer Making"
+                },
+                "last_changed": "2022-01-24T21:06:02.469050+00:00",
+                "last_updated": "2022-01-24T21:06:16.712678+00:00",
+                "context": {
+                    "id": "59fe5721ceada96a8507a268b3eb2cde",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2022-01-27T07:36:17.118539+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "input_number.temp",
+                "state": "15.0",
+                "attributes": {
+                    "initial": null,
+                    "editable": true,
+                    "min": 0.0,
+                    "max": 100.0,
+                    "step": 1.0,
+                    "mode": "slider",
+                    "icon": "mdi:thermometer",
+                    "friendly_name": "Temp"
+                },
+                "last_changed": "2022-01-24T21:06:08.921361+00:00",
+                "last_updated": "2022-01-24T21:06:08.921361+00:00",
+                "context": {
+                    "id": "285dfc63674c67ff42ec89e07d567977",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2022-01-27T07:36:17.118539+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "input_boolean.heater",
+                "state": "off",
+                "attributes": {
+                    "editable": true,
+                    "icon": "mdi:radiator",
+                    "friendly_name": "Heater"
+                },
+                "last_changed": "2022-01-26T13:37:16.146919+00:00",
+                "last_updated": "2022-01-26T13:37:16.146919+00:00",
+                "context": {
+                    "id": "d28dd0727801ee95717edf3636ab0afe",
+                    "parent_id": "721f365b5e2993d39380f3ce64b79d42",
+                    "user_id": null
+                }
+            },
+            "last_seen": "2022-01-27T07:36:17.118539+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "input_boolean.cooler",
+                "state": "off",
+                "attributes": {
+                    "editable": true,
+                    "icon": "mdi:sun-snowflake",
+                    "friendly_name": "Cooler"
+                },
+                "last_changed": "2022-01-25T12:49:13.743893+00:00",
+                "last_updated": "2022-01-25T12:49:13.743893+00:00",
+                "context": {
+                    "id": "f00b443b3f3a0997b84176b686deb0f3",
+                    "parent_id": "6abb43f71a56c3b823205c974e618477",
+                    "user_id": null
+                }
+            },
+            "last_seen": "2022-01-27T07:36:17.118539+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "input_boolean.temp_control",
+                "state": "off",
+                "attributes": {
+                    "editable": true,
+                    "icon": "mdi:robot",
+                    "friendly_name": "Temp Control "
+                },
+                "last_changed": "2022-01-26T14:06:58.039213+00:00",
+                "last_updated": "2022-01-26T14:06:58.039213+00:00",
+                "context": {
+                    "id": "55d87a53e510238c60213dc31a43349f",
+                    "parent_id": null,
+                    "user_id": "364bd4dcdae14770aab6d58f960dd688"
+                }
+            },
+            "last_seen": "2022-01-27T07:36:17.118539+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "automation.start_heater",
+                "state": "on",
+                "attributes": {
+                    "last_triggered": "2022-01-26T13:34:15.441206+00:00",
+                    "mode": "single",
+                    "current": 0,
+                    "id": "1642362108821",
+                    "friendly_name": "Start Heater "
+                },
+                "last_changed": "2022-01-24T21:06:09.498912+00:00",
+                "last_updated": "2022-01-26T13:34:15.563491+00:00",
+                "context": {
+                    "id": "807bcf02983d79ddd6c21886d764f4c1",
+                    "parent_id": "721f365b5e2993d39380f3ce64b79d42",
+                    "user_id": null
+                }
+            },
+            "last_seen": "2022-01-27T07:36:17.118539+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "automation.start_coler",
+                "state": "on",
+                "attributes": {
+                    "last_triggered": "2022-01-25T12:42:13.064810+00:00",
+                    "mode": "single",
+                    "current": 0,
+                    "id": "1642362181462",
+                    "friendly_name": "Start Coler"
+                },
+                "last_changed": "2022-01-24T21:06:09.500493+00:00",
+                "last_updated": "2022-01-25T12:42:13.186842+00:00",
+                "context": {
+                    "id": "8493d95a3366a07badb7d5d36ec63f38",
+                    "parent_id": "6abb43f71a56c3b823205c974e618477",
+                    "user_id": null
+                }
+            },
+            "last_seen": "2022-01-27T07:36:17.118539+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "automation.start_the_heater_relay",
+                "state": "on",
+                "attributes": {
+                    "last_triggered": "2022-01-26T13:34:15.443434+00:00",
+                    "mode": "single",
+                    "current": 0,
+                    "id": "1642362810960",
+                    "friendly_name": "Start the heater relay"
+                },
+                "last_changed": "2022-01-24T21:06:09.502461+00:00",
+                "last_updated": "2022-01-26T13:37:16.155878+00:00",
+                "context": {
+                    "id": "bd185469da20b88135d746053985c236",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2022-01-27T07:36:17.118539+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "automation.start_the_cooler_relay",
+                "state": "on",
+                "attributes": {
+                    "last_triggered": "2022-01-25T12:42:13.067758+00:00",
+                    "mode": "single",
+                    "current": 0,
+                    "id": "1642362896352",
+                    "friendly_name": "Start the cooler relay"
+                },
+                "last_changed": "2022-01-24T21:06:09.504076+00:00",
+                "last_updated": "2022-01-25T12:49:13.751679+00:00",
+                "context": {
+                    "id": "7d0027d16de1b885ec26146da65b17ea",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2022-01-27T07:36:17.118539+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "automation.temp_control_start_heater",
+                "state": "on",
+                "attributes": {
+                    "last_triggered": "2022-01-26T13:34:15.407966+00:00",
+                    "mode": "single",
+                    "current": 0,
+                    "id": "1642402919012",
+                    "friendly_name": "Temp control: start heater"
+                },
+                "last_changed": "2022-01-24T21:06:09.505609+00:00",
+                "last_updated": "2022-01-26T13:34:15.477186+00:00",
+                "context": {
+                    "id": "721f365b5e2993d39380f3ce64b79d42",
+                    "parent_id": "55060fa8c0242042694ecc326efdde49",
+                    "user_id": null
+                }
+            },
+            "last_seen": "2022-01-27T07:36:17.118539+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "automation.temp_control_start_cooler",
+                "state": "on",
+                "attributes": {
+                    "last_triggered": "2022-01-25T12:42:13.016419+00:00",
+                    "mode": "single",
+                    "current": 0,
+                    "id": "1642405549474",
+                    "friendly_name": "Temp control: start cooler"
+                },
+                "last_changed": "2022-01-24T21:06:09.507802+00:00",
+                "last_updated": "2022-01-25T12:42:13.088093+00:00",
+                "context": {
+                    "id": "6abb43f71a56c3b823205c974e618477",
+                    "parent_id": "1f44db0ae9f5963055fe8f1d9ab14aba",
+                    "user_id": null
+                }
+            },
+            "last_seen": "2022-01-27T07:36:17.118539+00:00"
+        }
+    ]
+}
