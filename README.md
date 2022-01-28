@@ -1,4 +1,4 @@
-#Termo ?
+# Termo ?
 
 I having some hard work to describe it if you have a netter world let me know.
 
@@ -79,9 +79,9 @@ To get the mac of ypu miplants let the tool run and look in the logs it will pri
 ### Build images
 
 
-![K8s!](/images/s1.png)
-![K8s!](/images/s2.png)
-![K8s!](/images/s3.png)
-![K8s!](/images/s4.png)
+![K8s!](/images/s1.jpg)
+![K8s!](/images/s2.jpg)
+![K8s!](/images/s3.jpg)
+![K8s!](/images/s4.jpg)
 
 ![K8s!](/images/s4.mp4)
