@@ -5,7 +5,7 @@ I having some hard work to describe it if you have a better world let me know.
 Well its a fridge with a heater inside and they are controlled by a raspberry pie to keep the temp constant.
 First task was to keep a perfect temp for making beer but then someone... come up with the ide that is also good for growing plants..
 
-So its can both heat and col the inside of the fridge depending on the needs
+So its can both heat ore cool the inside of the fridge depending on the needs.
 
 
 
