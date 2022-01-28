@@ -29,16 +29,16 @@ To get a temp inside the fridge a mi plans sensor is set inside the fridge.
 
 ### fix the fridge
 First we need to hack the fridge so we can controll the compressor and a power socket for the heater. 
-I hade a compressor that i could by pass the fridge controll and connect a switch dtat started the compressor.
+I hade a compressor that i could by-pass the fridge control and connect a switch that started the compressor.
 After that a connect some power line and setup a power socket inside the fridge as well for the heatet.
 
-The power cabel where connected to relay to switch on and off the power
+The power cabel where connected to relay to switch on and off the power.
 
 
 ### Connect the raspberry
 For this a installed a clean raspberry pi image in a new raspberry 3 board. I then connected the relay to gpio pin 17 and 27.
 I also setup a 7 screen and mounted the screen on the fridge door.
-For termonstad i used a bluetooth my flora stick
+For termonstad I used a bluetooth mi flora stick
 
 
 ### Start
@@ -58,7 +58,7 @@ Login into http://{IP}:8123 with user beer / beer
 This is a API thet turn the gpio pins up and down and whats control the power sockets
 
 2. mi plant
-This will qery all mi devices around and get the data for them and store in a file
+This will query all mi devices around and get the data for them and store in a file
 
 3. mi api
 This is a api deviced ontop of the mi plant. It reads the file with the data and exposes them over a api endpoint
